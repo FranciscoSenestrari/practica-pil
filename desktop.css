@@ -1,0 +1,5 @@
+.footer-container{
+
+    flex-direction: row;
+    place-content: center;
+}
