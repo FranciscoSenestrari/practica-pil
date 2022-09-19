@@ -1,7 +1,23 @@
 @media (min-width: 600px) {
-    .footer-container{
-
-        flex-direction: row;
-        place-content: center;
-    }
+  .footer-container {
+    flex-direction: row;
+    place-content: center;
   }
+}
+header {
+  flex-direction: row;
+}
+.header-container {
+  width: 30%;
+  height: 7rem;
+}
+.nav-wrapper {
+  width: 70%;
+  order: 1;
+  place-items: center;
+  background-color: #121212;
+
+}
+.nav-wrapper a{
+    color: #f8f8f8;
+}

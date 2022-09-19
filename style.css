@@ -7,12 +7,17 @@ html {
   font-size: 62.5%;
   font-family: "Nunito", sans-serif;
 }
-
+header {
+  display: flex;
+  flex-direction: column;
+}
 .header-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  height: 10rem;
   width: 100%;
+  place-content: center;
+  place-items: center;
   background-color: #121212;
 }
 .header-container img {
@@ -23,32 +28,37 @@ html {
 .title {
   font-weight: bold;
   font-size: 3rem;
+  color: #f8f8f8;
 }
 .nav-wrapper {
-  margin: 1.2rem;
+  justify-self: center;
+  align-self: center;
+  border-bottom: #121212 solid 0.05rem;
 }
 
 .nav-item {
   list-style: none;
   text-decoration: none;
   display: inline-block;
-  margin: 1.2rem;
+  padding: 14px 16px;
   font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 0.5s;
 }
-.nav-item a :hover {
-  background-color: grey ;
+.nav-item a:focus {
+  background-color: #12121279;
 }
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    place-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+}
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: auto;
-  background-color: red;
+  height: 15rem;
+  background-color: #1212127e;
 }
 .footer-container {
   display: flex;
