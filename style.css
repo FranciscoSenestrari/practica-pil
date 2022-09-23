@@ -84,23 +84,25 @@ section {
   padding: 0 2rem;
 }
 
-#gallery {
+section{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
 }
+#gallery{
+  justify-content: space-evenly;
+}
+.section-title{
+ margin-top: 1.5rem;
+}
 
 .gallery-item {
   display: flex;
-  width: 70vw;
-  height: 50px;
   margin: 10 18;
-  background-color: aqua;
 }
-
-.gallery-item :hover {
- background-color: #121212;
+.gallery-item img{
+  width: 70vw ;
 }
 
 #image-interactive {
