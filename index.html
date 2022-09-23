@@ -23,21 +23,87 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="header-container">
+    <header class="header-container">
+      <div class="header-title">
         <h1 class="title">VisualVR</h1>
         <img src="images/logo.svg" alt="logo-company" />
       </div>
-      <div class="nav-wrapper">
-        <nav>
-          <a class="nav-item" href="">Home</a>
-          <a class="nav-item" href="">Gallery</a>
-          <a class="nav-item"href="">Contact</a>
-          <a class="nav-item"href="">Social</a>
-        </nav>
-      </div>
+
+      <nav>
+        <div class="nav-wrapper">
+          <a class="nav-item" href="#home">Home</a>
+          <a class="nav-item" href="#gallery">Gallery</a>
+          <a class="nav-item" href="#contact">Contact</a>
+          <a class="nav-item" href="#social">Social</a>
+        </div>
+        <div class="resume-container">
+          <p class="resume-text">Make your reality now</p>
+        </div>
+      </nav>
     </header>
-    <main class="container"></main>
+    <main class="container">
+      <section id="home">
+        <picture>
+          <source
+            media="(min-width:min-width: 800px)"
+            srcset="images/desktop/image-interactive.jpg"
+          />
+          <img
+            id="image-interactive"
+            src="./images/mobile/image-interactive.jpg"
+            alt="men playing vr"
+          />
+        </picture>
+        <div class="description">
+          <h1>THE LEADER IN INTERACTIVE VR</h1>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+      <section id="gallery">
+        <h2 class="">Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            
+          </div>
+          <div class="gallery-item">
+    
+          </div>
+          <div class="gallery-item"></div>
+          <div class="gallery-item"></div>
+          <div class="gallery-item"></div>
+        </div>
+      </section>
+    </main>
+    <!--
+      <picture>
+              <figure>
+                  <source
+                media="(min-width:min-width: 800px)"
+                srcset="images/desktop/image-deep-earth.jpg"
+              />
+                <img
+                  src="images/mobile/image-curiosity.jpg"
+                  alt="nasa robot on mars "
+                />
+              </figure>
+              <figcaption>NASA robot un Mars</figcaption>
+            </picture>
+          </div>
+          <div class="gallery-item">
+            <picture>
+              <figure>
+                <img
+                  src="images/mobile/image-deep-earth.jpg"
+                  alt="nasa robot on mars "
+                />
+              </figure>
+              <figcaption>The view of the earth from space</figcaption>
+            </picture>
     <footer>
       <div class="footer-container">
         <a class="social-button">
@@ -56,6 +122,6 @@
           >Francisco Senestrari</a
         >
       </span>
-    </footer>
-  </body>
+    </footer> 
+  --></body>
 </html>
