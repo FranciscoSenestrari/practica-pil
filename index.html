@@ -23,25 +23,26 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header-container">
-      <div class="header-title">
-        <h1 class="title">VisualVR</h1>
-        <img src="images/logo.svg" alt="logo-company" />
-      </div>
-
-      <nav>
-        <div class="nav-wrapper">
-          <a class="nav-item" href="#home">Home</a>
-          <a class="nav-item" href="#gallery">Gallery</a>
-          <a class="nav-item" href="#contact">Contact</a>
-          <a class="nav-item" href="#social">Social</a>
+    <main class="container">
+      <header class="header-container">
+        <div class="header-title">
+          <h1 class="title">VisualVR</h1>
+          <img src="images/logo.svg" alt="logo-company" />
         </div>
+
+        <nav>
+          <div class="nav-wrapper">
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#gallery">Gallery</a>
+            <a class="nav-item" href="#contact">Contact</a>
+            <a class="nav-item" href="#social">Social</a>
+          </div>
+        </nav>
         <div class="resume-container">
           <p class="resume-text">Make your reality now</p>
         </div>
-      </nav>
-    </header>
-    <main class="container">
+      </header>
+
       <section id="home">
         <picture>
           <source
@@ -86,9 +87,9 @@
             <picture>
               <figure>
                 <source
-                media="(min-width:min-width: 800px)"
-                srcset="images/desktop/image-deep-earth.jpg"
-              />
+                  media="(min-width:min-width: 800px)"
+                  srcset="images/desktop/image-deep-earth.jpg"
+                />
                 <img
                   src="images/mobile/image-deep-earth.jpg"
                   alt="earth view from space "
@@ -101,9 +102,9 @@
             <picture>
               <figure>
                 <source
-                media="(min-width:min-width: 800px)"
-                srcset="/images/desktop/image-pocket-borealis.jpg"
-              />
+                  media="(min-width:min-width: 800px)"
+                  srcset="/images/desktop/image-pocket-borealis.jpg"
+                />
                 <img
                   src="images/mobile/image-pocket-borealis.jpg"
                   alt="Aurora Polaris on earth "
@@ -112,14 +113,13 @@
               <figcaption>Aurora Polaris</figcaption>
             </picture>
           </div>
-          
           <div class="gallery-item">
             <picture>
               <figure>
                 <source
-                media="(min-width:min-width: 800px)"
-                srcset="/images/desktop/image-night-arcade.jpg"
-              />
+                  media="(min-width:min-width: 800px)"
+                  srcset="/images/desktop/image-night-arcade.jpg"
+                />
                 <img
                   src="images/mobile/image-night-arcade.jpg"
                   alt="arcade neon night "
@@ -128,57 +128,36 @@
               <figcaption>Arcade Neon</figcaption>
             </picture>
           </div>
-          
         </div>
       </section>
       <section id="contact">
         <h2 class="section-title">Contact</h2>
-        <p>Please contact with us</p>
+        <h3>Please contact with us</h3>
+        <div class="form-container">
+          <form action="summit">
+            <input
+              class="input-contact"
+              type="email"
+              required
+              placeholder="example@example.com"
+            />
+            <input class="button-contact" type="submit" value="Send" />
+          </form>
+        </div>
+        <footer id="social">
+          <div class="footer-container">
+            <a class="social-button" href="#">
+              <img src="images/icon-facebook.svg" alt="social-media-facebook"
+            /></a>
+            <a class="social-button" href="#">
+              <img src="images/icon-instagram.svg" alt="social-media-instagram"
+            /></a>
+            <a class="social-button" href="#">
+              <img src="images/icon-twitter.svg" alt="social-media-twitter"
+            /></a>
+          </div>
+        </footer>
       </section>
     </main>
-    <!--
-      <picture>
-              <figure>
-                  <source
-                media="(min-width:min-width: 800px)"
-                srcset="images/desktop/image-deep-earth.jpg"
-              />
-                <img
-                  src="images/mobile/image-curiosity.jpg"
-                  alt="nasa robot on mars "
-                />
-              </figure>
-              <figcaption>NASA robot un Mars</figcaption>
-            </picture>
-          </div>
-          <div class="gallery-item">
-            <picture>
-              <figure>
-                <img
-                  src="images/mobile/image-deep-earth.jpg"
-                  alt="nasa robot on mars "
-                />
-              </figure>
-              <figcaption>The view of the earth from space</figcaption>
-            </picture>
-    <footer>
-      <div class="footer-container">
-        <a class="social-button">
-          <img src="images/icon-facebook.svg" alt="social-media-facebook"
-        /></a>
-        <a class="social-button">
-          <img src="images/icon-instagram.svg" alt="social-media-instagram"
-        /></a>
-        <a class="social-button">
-          <img src="images/icon-twitter.svg" alt="social-media-twitter"
-        /></a>
-      </div>
-      <span
-        >Created by
-        <a href="https://www.linkedin.com/in/francisco-senestrari/"
-          >Francisco Senestrari</a
-        >
-      </span>
-    </footer> 
-  --></body>
+  </body>
 </html>
