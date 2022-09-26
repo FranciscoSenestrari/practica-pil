@@ -59,7 +59,7 @@ html {
 .resume-container {
   display: flex;
   height: 25%;
-  margin-top: 30%;
+  margin-top: 15vh;
   border: #f8f8f8 solid 0.2rem;
   align-items: center;
   justify-content: center;
