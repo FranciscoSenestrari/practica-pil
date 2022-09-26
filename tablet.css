@@ -1,5 +1,9 @@
 
-
+.main-page{
+  background-image: url("./images/mobile/image-hero.jpg");
+  background-size: cover;
+  height: 100vh;
+}
 .header-container {
   flex-direction: row;
 }
@@ -7,10 +11,9 @@
   height: 10rem;
   background-color: #121212;
   justify-content: center;
+  align-items: center;
 }
-.nav-wrapper a{
-    color: #f8f8f8;
-}
+
 .footer-container {
   flex-direction: row;
   place-content: center;

@@ -7,14 +7,17 @@ html {
   font-size: 62.5%;
   font-family: "Nunito", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.header-container {
-  display: flex;
-  flex-direction: column;
+.main-page {
   background-image: url("./images/mobile/image-hero.jpg");
   background-size: cover;
   height: 100vh;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
 }
 .header-title {
   display: flex;
@@ -52,9 +55,10 @@ html {
   text-align: center;
   color: #ffffffea;
 }
+
 .resume-container {
   display: flex;
-  height: 50%;
+  height: 25%;
   margin-top: 30%;
   border: #f8f8f8 solid 0.2rem;
   align-items: center;
@@ -72,20 +76,16 @@ html {
 }
 
 section {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  border-bottom: #121212 solid 0.05rem;
   padding: 0 2rem;
 }
 #home {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .section-title {
@@ -101,9 +101,6 @@ section {
   max-width: 24rem;
   padding-top: 2rem;
   font-weight: 400;
-}
-#gallery {
-  justify-content: space-evenly;
 }
 
 .gallery-item {
@@ -140,7 +137,7 @@ section {
   border-right-color: transparent;
   margin: 2rem;
 }
-.button-contact{
+.button-contact {
   background-color: #333;
   color: #f8f8f8;
   height: 4rem;
@@ -163,9 +160,13 @@ footer {
 .social-button {
   margin: 1rem;
 }
+.social-button:hover {
+  transform: scale(1.5);
+}
 @keyframes show {
   to {
     opacity: 1;
     clip-path: polygon(100% 100%, 100% 0, 0 0, 0% 100%);
   }
 }
+

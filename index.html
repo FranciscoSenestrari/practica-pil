@@ -24,24 +24,27 @@
   </head>
   <body>
     <main class="container">
-      <header class="header-container">
-        <div class="header-title">
-          <h1 class="title">VisualVR</h1>
-          <img src="images/logo.svg" alt="logo-company" />
-        </div>
-
-        <nav>
-          <div class="nav-wrapper">
-            <a class="nav-item" href="#home">Home</a>
-            <a class="nav-item" href="#gallery">Gallery</a>
-            <a class="nav-item" href="#contact">Contact</a>
-            <a class="nav-item" href="#social">Social</a>
+      <div class="main-page">
+        <header class="header-container">
+          <div class="header-title">
+            <h1 class="title">VisualVR</h1>
+            <img src="images/logo.svg" alt="logo-company" />
           </div>
-        </nav>
-        <div class="resume-container">
-          <p class="resume-text">Make your reality now</p>
+          <nav>
+            <div class="nav-wrapper">
+              <a class="nav-item" href="#home">Home</a>
+              <a class="nav-item" href="#gallery">Gallery</a>
+              <a class="nav-item" href="#contact">Contact</a>
+              <a class="nav-item" href="#social">Social</a>
+            </div>
+          </nav>
+        </header>
+        <div class="resume">
+          <div class="resume-container">
+            <p class="resume-text">Make your reality now</p>
+          </div>
         </div>
-      </header>
+      </div>
 
       <section id="home">
         <picture>
@@ -66,98 +69,106 @@
         </div>
       </section>
       <section id="gallery">
-        <h2 class="section-title">Gallery</h2>
-        <div class="gallery-container">
-          <div class="gallery-item">
-            <picture>
-              <figure>
-                <source
-                  media="(min-width:min-width: 800px)"
-                  srcset="images/desktop/image-curiosity.jpg"
-                />
-                <img
-                  src="images/mobile/image-curiosity.jpg"
-                  alt="nasa robot on mars "
-                />
-              </figure>
-              <figcaption>NASA robot un Mars</figcaption>
-            </picture>
-          </div>
-          <div class="gallery-item">
-            <picture>
-              <figure>
-                <source
-                  media="(min-width:min-width: 800px)"
-                  srcset="images/desktop/image-deep-earth.jpg"
-                />
-                <img
-                  src="images/mobile/image-deep-earth.jpg"
-                  alt="earth view from space "
-                />
-              </figure>
-              <figcaption>The view of the earth from space</figcaption>
-            </picture>
-          </div>
-          <div class="gallery-item">
-            <picture>
-              <figure>
-                <source
-                  media="(min-width:min-width: 800px)"
-                  srcset="/images/desktop/image-pocket-borealis.jpg"
-                />
-                <img
-                  src="images/mobile/image-pocket-borealis.jpg"
-                  alt="Aurora Polaris on earth "
-                />
-              </figure>
-              <figcaption>Aurora Polaris</figcaption>
-            </picture>
-          </div>
-          <div class="gallery-item">
-            <picture>
-              <figure>
-                <source
-                  media="(min-width:min-width: 800px)"
-                  srcset="/images/desktop/image-night-arcade.jpg"
-                />
-                <img
-                  src="images/mobile/image-night-arcade.jpg"
-                  alt="arcade neon night "
-                />
-              </figure>
-              <figcaption>Arcade Neon</figcaption>
-            </picture>
+        <div class="gallery-wrapper">
+          <h2 class="section-title">Gallery</h2>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <picture>
+                <figure>
+                  <source
+                    media="(min-width:min-width: 800px)"
+                    srcset="images/desktop/image-curiosity.jpg"
+                  />
+                  <img
+                    src="images/mobile/image-curiosity.jpg"
+                    alt="nasa robot on mars "
+                  />
+                </figure>
+                <figcaption>NASA robot un Mars</figcaption>
+              </picture>
+            </div>
+            <div class="gallery-item">
+              <picture>
+                <figure>
+                  <source
+                    media="(min-width:min-width: 800px)"
+                    srcset="images/desktop/image-deep-earth.jpg"
+                  />
+                  <img
+                    src="images/mobile/image-deep-earth.jpg"
+                    alt="earth view from space "
+                  />
+                </figure>
+                <figcaption>The view of the earth from space</figcaption>
+              </picture>
+            </div>
+            <div class="gallery-item">
+              <picture>
+                <figure>
+                  <source
+                    media="(min-width:min-width: 800px)"
+                    srcset="/images/desktop/image-pocket-borealis.jpg"
+                  />
+                  <img
+                    src="images/mobile/image-pocket-borealis.jpg"
+                    alt="Aurora Polaris on earth "
+                  />
+                </figure>
+                <figcaption>Aurora Polaris</figcaption>
+              </picture>
+            </div>
+            <div class="gallery-item">
+              <picture>
+                <figure>
+                  <source
+                    media="(min-width:min-width: 800px)"
+                    srcset="/images/desktop/image-night-arcade.jpg"
+                  />
+                  <img
+                    src="images/mobile/image-night-arcade.jpg"
+                    alt="arcade neon night "
+                  />
+                </figure>
+                <figcaption>Arcade Neon</figcaption>
+              </picture>
+            </div>
           </div>
         </div>
       </section>
       <section id="contact">
-        <h2 class="section-title">Contact</h2>
-        <h3>Please contact with us</h3>
-        <div class="form-container">
-          <form action="summit">
-            <input
-              class="input-contact"
-              type="email"
-              required
-              placeholder="example@example.com"
-            />
-            <input class="button-contact" type="submit" value="Send" />
-          </form>
-        </div>
-        <footer id="social">
-          <div class="footer-container">
-            <a class="social-button" href="#">
-              <img src="images/icon-facebook.svg" alt="social-media-facebook"
-            /></a>
-            <a class="social-button" href="#">
-              <img src="images/icon-instagram.svg" alt="social-media-instagram"
-            /></a>
-            <a class="social-button" href="#">
-              <img src="images/icon-twitter.svg" alt="social-media-twitter"
-            /></a>
+        <div class="contact-wrapper">
+          <h2 class="section-title">Contact</h2>
+          <h3>Please contact with us</h3>
+          <div class="form-container">
+            <form action="summit">
+              <input
+                class="input-contact"
+                type="email"
+                required
+                placeholder="example@example.com"
+              />
+              <input class="button-contact" type="submit" value="Send" />
+            </form>
           </div>
-        </footer>
+          <footer id="social">
+            <div class="footer-container">
+              <a class="social-button" href="#">
+                <img src="images/icon-facebook.svg" alt="social-media-facebook"
+              /></a>
+              <a class="social-button" href="#">
+                <img
+                  src="images/icon-instagram.svg"
+                  alt="social-media-instagram"
+              /></a>
+              <a class="social-button" href="#">
+                <img src="images/icon-twitter.svg" alt="social-media-twitter"
+              /></a>
+            </div>
+          </footer>
+        </div>
+        
       </section>
+     
     </main>
   </body>
 </html>
