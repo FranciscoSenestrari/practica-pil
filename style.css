@@ -11,8 +11,7 @@ html {
 }
 
 .main-page {
-  background-image: url("./images/mobile/image-hero.jpg");
-  background-size: cover;
+  background: url("./images/mobile/image-hero.jpg") cover;
   height: 100vh;
 }
 .header-container {
@@ -132,9 +131,8 @@ section {
   background-color: transparent;
   color: #f8f8f8;
   width: 70vw;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
+  border-color:  transparent transparent  gray transparent;
+  
   margin: 2rem;
 }
 .button-contact {
